@@ -29,7 +29,7 @@ wsl --set-version Ubuntu 2
 2. Performance -> CPU
 3. Virtualization:Enabaled　になってるか確認します
 4. なってない場合は再起動してBIOSメニュー
-5. Master boardによるですけど起動します前の画面で *F2* が一般的
+5. Master boardによるですけど起動する前の画面で *F2* が一般的
 6. 「Advanced」→「CPU Configuration（CPU設定）」→「Intel（(VMX）Virtualization Technology」の「Disabled」を「Enable」に変更して
 7. 「F10」を押して保存すれば完了
 8. 注意：お使いのCPUがAMD CPUの場合は、BIOSページに入った後、「CPU Configuration」→「Secure Virtual Machine」或いは「SVM mode」の「Disabled」を「Enable」に変更して、「F10」を押して保存すれば完了
@@ -46,7 +46,7 @@ https://docs.docker.com/desktop/troubleshoot/overview/#diagnose-from-the-termina
 - 注意点
 - Docker をインストールしますには __WSL のインストールを終えた後__
 
-## MySQL hands on
+## MySQL Hands‐on
 
 - レポジトリをcloneします。
 - コンテナを起動します。  
