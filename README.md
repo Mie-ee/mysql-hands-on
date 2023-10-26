@@ -7,16 +7,34 @@ Windows 10 Pro
 19045.3448
 
 ## WSL を使用して Windows に Linux をインストール
- *[Microsoftサイト](https://learn.microsoft.com/ja-jp/windows/wsl/install)を参照*    
+### 前提条件
+> 以下のコマンドを使用するには、  
+>  Windows 10 バージョン 2004 以上 (ビルド 19041 以上)  
+> または Windows 11 を実行している必要があります。
+
+それより前のバージョンの場合は、*手動インストール* が必要です。
+
+ *[Microsoftサイト](https://learn.microsoft.com/ja-jp/windows/wsl/install)を参照* 
+
+### インストール手順
+
+
+[管理者として実行]でWindows PowerShellにて、
  ```
  wsl --install
 ```
-成功しました。
+コマンドを使用し、WSL2 と Linux の既定の Ubuntu ディストリビューションをインストールしてくれるはずなんですが、
+上手くいかなかったので。
+
+Windows storeでUbuntuを手動インストールしました。
+![image](https://github.com/Mie-ee/mysql-hands-on/assets/146546228/bdedd1fa-78a9-4b68-b8b0-5953187871ac)
 
 ```
 wsl -l -v
 ```
-実行している WSL のバージョンを確認したら、1　でした。
+実行している WSL のバージョンを確認したら、 Ubuntuで　WSL1　でした。  
+DockerをインストールするにはWSL２が必要なので、
+
 ```
 wsl --set-version Ubuntu 2
 ```
@@ -25,17 +43,22 @@ wsl --set-version Ubuntu 2
 > Error code: Wsl/Service/CreateInstance/WSL_E_WSL2_NOT_SUPPORTED
 
 **解決方法**
-1. Task Manager -> More Details
-2. Performance -> CPU
-3. Virtualization:Enabaled　になってるか確認します
-4. なってない場合は再起動してBIOSメニュー
-5. Master boardによるですけど起動する前の画面で *F2* が一般的
-6. 「Advanced」→「CPU Configuration（CPU設定）」→「Intel（(VMX）Virtualization Technology」の「Disabled」を「Enable」に変更して
-7. 「F10」を押して保存すれば完了
-8. 注意：お使いのCPUがAMD CPUの場合は、BIOSページに入った後、「CPU Configuration」→「Secure Virtual Machine」或いは「SVM mode」の「Disabled」を「Enable」に変更して、「F10」を押して保存すれば完了
+1. Task Manager -> More Details -> Performance -> CPU
+2. Virtualization:Enabaled　になってるか確認します
+   
+- なってない場合
+1.再起動してBIOSページに入る
+2. Master boardによるですけど起動する前の画面で *F2* が一般的
+3. Advanced」→「CPU Configuration（CPU設定）」→「Intel（(VMX）Virtualization Technology」の「Disabled」を「Enable」に変更して
+4. 「F10」を押して保存すれば完了
+5. 注意：お使いのCPUがAMD CPUの場合は、BIOSページに入った後、「CPU Configuration」→「Secure Virtual Machine」或いは「SVM mode」の「Disabled」を「Enable」に変更して、「F10」を押して保存すれば完了
    ![image](https://github.com/Mie-ee/mysql-hands-on/assets/146546228/f3146a14-bf0e-4c27-8d45-0d1a831afea5)
 
-## Microsoft Store から Windows Terminalをインストール
+-なっている場合、又は上記の設定が完了しても同じエラーが起こる場合
+まず "Linux 用 Windows サブシステム" オプション機能が有効になってない可能性があります。
+[*手動インストール*](https://learn.microsoft.com/ja-jp/windows/wsl/install](https://learn.microsoft.com/ja-jp/windows/wsl/install-manual)の手順１－３の部分を参考してください。
+
+## Microsoft Store から Windows Terminalをインストール（省略可能）
 ![image](https://github.com/Mie-ee/mysql-hands-on/assets/146546228/1364f4c8-47b6-4a46-a581-b4af26608d82)
 Windows TerminalでUbuntuとgitが使えるようになりました。
 
@@ -44,7 +67,9 @@ Windows TerminalでUbuntuとgitが使えるようになりました。
 https://docs.docker.com/desktop/troubleshoot/overview/#diagnose-from-the-terminal
 のからダウンロードします。
 - 注意点
-- Docker をインストールしますには __WSL のインストールを終えた後__
+- WSLのインストールを終えたら必ず __再起動__ してください
+- Docker をインストールするには __WSL のインストールを終えた後__
+
 
 ## MySQL Hands‐on
 
