@@ -1,5 +1,5 @@
 # 概要
-第七回の課題提出。   
+第七回の課題提出です。   
 発生したエラーと解決方法も記載されました。
 
 # 環境
@@ -27,15 +27,15 @@ wsl --set-version Ubuntu 2
 **解決方法**
 1. Task Manager -> More Details
 2. Performance -> CPU
-3. Virtualization:Enabaled　になってるか確認する
+3. Virtualization:Enabaled　になってるか確認します
 4. なってない場合は再起動してBIOSメニュー
-5. Master boardによるですけど起動する前の画面で *F2* が一般的
+5. Master boardによるですけど起動します前の画面で *F2* が一般的
 6. 「Advanced」→「CPU Configuration（CPU設定）」→「Intel（(VMX）Virtualization Technology」の「Disabled」を「Enable」に変更して
-7. 「F10」を押して保存すれば完了です。
-8. 注意：お使いのCPUがAMD CPUの場合は、BIOSページに入った後、「CPU Configuration」→「Secure Virtual Machine」或いは「SVM mode」の「Disabled」を「Enable」に変更して、「F10」を押して保存すれば完了です。
+7. 「F10」を押して保存すれば完了
+8. 注意：お使いのCPUがAMD CPUの場合は、BIOSページに入った後、「CPU Configuration」→「Secure Virtual Machine」或いは「SVM mode」の「Disabled」を「Enable」に変更して、「F10」を押して保存すれば完了
    ![image](https://github.com/Mie-ee/mysql-hands-on/assets/146546228/f3146a14-bf0e-4c27-8d45-0d1a831afea5)
 
-## Microsoft Store から Windows Terminalをインストールします
+## Microsoft Store から Windows Terminalをインストール
 ![image](https://github.com/Mie-ee/mysql-hands-on/assets/146546228/1364f4c8-47b6-4a46-a581-b4af26608d82)
 Windows TerminalでUbuntuとgitが使えるようになりました。
 
@@ -44,12 +44,12 @@ Windows TerminalでUbuntuとgitが使えるようになりました。
 https://docs.docker.com/desktop/troubleshoot/overview/#diagnose-from-the-terminal
 のからダウンロードします。
 - 注意点
-- Docker をインストールするには (WSL のインストールを終えた後)
+- Docker をインストールしますには __WSL のインストールを終えた後__
 
 ## MySQL hands on
 
 - レポジトリをcloneします。
-- コンテナを起動する。  
+- コンテナを起動します。  
 - コンテナを確認します。  
 - MySQLにログインします。
 ![image](https://github.com/Mie-ee/mysql-hands-on/assets/146546228/2bf05eaa-58ef-4ffc-a407-d65a38de29c4)
@@ -61,39 +61,39 @@ https://docs.docker.com/desktop/troubleshoot/overview/#diagnose-from-the-termina
 パスワードが間違えると、以下のエラーが起こります。
 > Unit mysqld.service could not be found.
 
-movie_listがあることを確認する。    
+movie_listがあることを確認します。    
 
 ![image](https://github.com/Mie-ee/mysql-hands-on/assets/146546228/0cf3ed6f-3b82-44a3-b124-f9dd9277e500)
 
-ちなみに、セミコロン入力忘れするとこうなります。
+ちなみに、セミコロン入力忘れるとこうなります。
 
 ![image](https://github.com/Mie-ee/mysql-hands-on/assets/146546228/c47c350a-7c7f-4526-9890-882d31d11ab6)
 
 
-movie_listの利用を開始する。  
+movie_listの利用を開始します。  
 
 ![image](https://github.com/Mie-ee/mysql-hands-on/assets/146546228/0c15bcaf-ae49-4039-8474-1c3c1f8fff7c)
 
 
-moviesテーブルがあることを確認する。
+moviesテーブルがあることを確認します。
 
 ![image](https://github.com/Mie-ee/mysql-hands-on/assets/146546228/0105e4bc-4271-4b57-96bc-4f937f38195d)
 
 
-moviesテーブルのレコードを確認する。
+moviesテーブルのレコードを確認します。
 
 ![image](https://github.com/Mie-ee/mysql-hands-on/assets/146546228/8dfc8ab1-dae0-47fb-b295-bb0f77af9155)
 
-テーブルにレコードを追加してみる。
+テーブルにレコードを追加してみます。
 ![image](https://github.com/Mie-ee/mysql-hands-on/assets/146546228/7508a94d-58ee-4ecd-8dc0-a6329db20fa3)
 
-レコードの登録結果を確認する。
+レコードの登録結果を確認します。
 
 ![image](https://github.com/Mie-ee/mysql-hands-on/assets/146546228/903c8a06-7ea0-4393-9f61-d7f23db53f98)
 
-- ログアウト
-- 起動したDockerコンテナを停止する
-- 停止できていることを確認する
+- ログアウトします
+- 起動したDockerコンテナを停止します
+- 停止できていることを確認します
 
 ![image](https://github.com/Mie-ee/mysql-hands-on/assets/146546228/5c04b921-745b-4734-ae50-89963a89455a)
 
