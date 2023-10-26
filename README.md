@@ -46,7 +46,7 @@ https://docs.docker.com/desktop/troubleshoot/overview/#diagnose-from-the-termina
 - 注意点
 - Docker をインストールするには (WSL のインストールを終えた後)
 
-## Mysql hands on
+## MySQL hands on
 
 - レポジトリをcloneします。
 - コンテナを起動する。  
