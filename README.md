@@ -7,7 +7,7 @@ Windows 10 Pro
 19045.3448
 
 ## WSL を使用して Windows に Linux をインストール
- *[Mircosoftサイト](https://learn.microsoft.com/ja-jp/windows/wsl/install)を参照*    
+ *[Microsoftサイト](https://learn.microsoft.com/ja-jp/windows/wsl/install)を参照*    
  ```
  wsl --install
 ```
