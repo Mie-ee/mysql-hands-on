@@ -61,6 +61,9 @@ wsl --set-version Ubuntu 2
 [*手動インストール*](https://learn.microsoft.com/ja-jp/windows/wsl/install-manual)の手順１－３の部分を参考してください。
 
 ## Microsoft Store から Windows Terminalをインストール（省略可能）
+
+![image](https://github.com/Mie-ee/mysql-hands-on/assets/146546228/79ecaf6b-2f25-4851-8a84-67552b93f088)
+
 ![image](https://github.com/Mie-ee/mysql-hands-on/assets/146546228/1364f4c8-47b6-4a46-a581-b4af26608d82)
 Windows TerminalでUbuntuとgitが使えるようになりました。
 
