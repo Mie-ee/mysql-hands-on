@@ -55,8 +55,9 @@ wsl --set-version Ubuntu 2
    ![image](https://github.com/Mie-ee/mysql-hands-on/assets/146546228/f3146a14-bf0e-4c27-8d45-0d1a831afea5)
 
 
-- 「Enabaled」なっている場合、又は上記の設定が完了しても同じエラーが起こる場合  
-まず "Linux 用 Windows サブシステム" オプション機能が有効になってない可能性があります。
+- 「Enabaled」なっている場合  
+- 上記の設定が完了しても同じエラーが起こる場合    
+  Linux 用 Windows サブシステム" オプション機能が有効になってない可能性があります。  
 [*手動インストール*](https://learn.microsoft.com/ja-jp/windows/wsl/install-manual)の手順１－３の部分を参考してください。
 
 ## Microsoft Store から Windows Terminalをインストール（省略可能）
