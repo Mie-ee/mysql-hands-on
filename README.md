@@ -47,7 +47,7 @@ wsl --set-version Ubuntu 2
 2. Virtualization:Enabaled　になってるか確認します
    
 - なってない場合  
-1.再起動してBIOSページに入る
+1. 再起動してBIOSページに入る
 2. Master boardによるですけど起動する前の画面で *F2* が一般的
 3. Advanced」→「CPU Configuration（CPU設定）」→「Intel（(VMX）Virtualization Technology」の「Disabled」を「Enable」に変更して
 4. 「F10」を押して保存すれば完了
