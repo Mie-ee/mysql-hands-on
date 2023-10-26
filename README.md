@@ -45,7 +45,7 @@ wsl --set-version Ubuntu 2
 **解決方法**
 1. Task Manager -> More Details -> Performance -> CPU
 2. Virtualization:Enabaled　になってるか確認します
-   
+
 - なってない場合  
 1. 再起動してBIOSページに入る
 2. Master boardによるですけど起動する前の画面で *F2* が一般的
@@ -54,9 +54,10 @@ wsl --set-version Ubuntu 2
 5. 注意：お使いのCPUがAMD CPUの場合は、BIOSページに入った後、「CPU Configuration」→「Secure Virtual Machine」或いは「SVM mode」の「Disabled」を「Enable」に変更して、「F10」を押して保存すれば完了
    ![image](https://github.com/Mie-ee/mysql-hands-on/assets/146546228/f3146a14-bf0e-4c27-8d45-0d1a831afea5)
 
+
 - 「Enabaled」なっている場合、又は上記の設定が完了しても同じエラーが起こる場合  
 まず "Linux 用 Windows サブシステム" オプション機能が有効になってない可能性があります。
-[*手動インストール*](https://learn.microsoft.com/ja-jp/windows/wsl/install](https://learn.microsoft.com/ja-jp/windows/wsl/install-manual)の手順１－３の部分を参考してください。
+[*手動インストール*](https://learn.microsoft.com/ja-jp/windows/wsl/install-manual)の手順１－３の部分を参考してください。
 
 ## Microsoft Store から Windows Terminalをインストール（省略可能）
 ![image](https://github.com/Mie-ee/mysql-hands-on/assets/146546228/1364f4c8-47b6-4a46-a581-b4af26608d82)
